@@ -13,5 +13,9 @@ RUN \
     apt-get remove -y curl \
 &&  apt-get clean
 
+# install supervisor
+RUN \
+  npm install supervisor -g
+
 # Test
 RUN node -v
